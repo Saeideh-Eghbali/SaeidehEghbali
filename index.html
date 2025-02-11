@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه وکیل</title>
+    <title>صفحه وکیل سعیده اقبالی</title>
     <style>
-        /* اعمال فونت فارسی */
+        /* بارگذاری فونت نستعلیق */
         @import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
         * {
             margin: 0;
@@ -15,73 +16,57 @@
             font-family: 'Vazir', sans-serif;
         }
 
-        body {
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
+        /* هدر */
         header {
-            display: flex;
-            justify-content: space-between;
+            background-color: #003366; /* رنگ آبی */
             padding: 20px;
-            background-color: #003366;
             color: white;
-            align-items: center;
-        }
-
-        /* استایل لوگو */
-        header .logo img {
-            width: 100px;
-            height: auto;
-        }
-
-        /* استایل اطلاعات تماس */
-        header .contact-info p {
-            margin: 5px 0;
-        }
-
-        header .contact-info a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* بخش پروفایل */
-        .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 40px 0;
             text-align: center;
         }
 
-        .profile .image img {
-            width: 150px;
-            height: 150px;
+        /* بدنه (محتوا وسط) */
+        .body {
+            background-color: #f4f4f9; /* رنگ خاکی روشن */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* بخش عکس وکیل */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
             border-radius: 50%;
-            margin-right: 20px;
+            background-color: #ccc;
+            display: inline-block;
         }
 
-        .profile .bio h2 {
-            margin-bottom: 10px;
-            font-size: 24px;
+        /* بخش نام وکیل */
+        .profile-name {
+            font-family: 'Amiri', cursive;
+            font-size: 36px;
             color: #003366;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        .profile .bio p {
-            font-size: 16px;
-            color: #666;
+        /* بخش بیوگرافی وکیل */
+        .bio {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         /* بخش خدمات */
         .services {
-            text-align: center;
-            margin: 40px 0;
+            margin-top: 40px;
+            background-color: #003366; /* رنگ آبی */
+            color: white;
+            padding: 20px;
         }
 
         .services h3 {
             font-size: 24px;
-            color: #003366;
             margin-bottom: 20px;
         }
 
@@ -92,19 +77,34 @@
 
         .services ul li {
             font-size: 18px;
-            color: #555;
+            margin-bottom: 10px;
         }
 
-        /* استایل لینک اینستاگرام */
-        .contact-info a:hover {
+        /* فوتر */
+        footer {
+            background-color: #1c1c1c; /* رنگ خاکی تیره */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- هدر -->
     <header>
         <div class="logo">
-            <img src="qovveh-cazaya-logo.png" alt="آرم قوه قضائیه">
+            <img src="qovveh-cazaya-logo.png" alt="آرم قوه قضائیه" width="100" height="auto">
         </div>
         <div class="contact-info">
             <p>تلفن: 021-xxxxxxx</p>
@@ -114,23 +114,40 @@
         </div>
     </header>
 
-    <section class="profile">
-        <div class="image">
-            <img src="your-photo.jpg" alt="عکس وکیل">
+    <!-- بدنه -->
+    <div class="body">
+        <div class="profile-image">
+            <!-- عکس وکیل اینجا بارگذاری می‌شود -->
         </div>
-        <div class="bio">
-            <h2>دکتر سعیده اقبالی</h2>
-            <p>وکیل پایه یک دادگستری با تخصص در دعاوی حقوقی و خانواده. بیش از 10 سال سابقه در ارائه مشاوره و نمایندگی در دادگاه‌ها.</p>
-        </div>
-    </section>
 
-    <section class="services">
+        <div class="profile-name">
+            وکیل سعیده اقبالی
+        </div>
+
+        <div class="bio">
+            وکیل پایه یک دادگستری با تخصص در دعاوی حقوقی و خانواده. بیش از 10 سال سابقه در ارائه مشاوره و نمایندگی در دادگاه‌ها.
+        </div>
+
+        <div class="about-me">
+            <h2>درباره من</h2>
+            <p>من سعیده اقبالی، وکیل پایه یک دادگستری، با بیش از 10 سال تجربه در زمینه مشاوره حقوقی و دفاع در دعاوی مختلف، به شما کمک می‌کنم تا حقوق خود را استیفا کنید.</p>
+        </div>
+    </div>
+
+    <!-- خدمات -->
+    <div class="services">
         <h3>خدمات ما</h3>
         <ul>
             <li>مشاوره حقوقی</li>
             <li>دعاوی خانواده</li>
             <li>نمایندگی در دادگاه‌ها</li>
         </ul>
-    </section>
+    </div>
+
+    <!-- فوتر -->
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2025</p>
+    </footer>
+
 </body>
 </html>
