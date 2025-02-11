@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه وکیل</title>
     <style>
+        /* اعمال فونت فارسی */
+        @import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -24,13 +27,16 @@
             padding: 20px;
             background-color: #003366;
             color: white;
+            align-items: center;
         }
 
+        /* استایل لوگو */
         header .logo img {
             width: 100px;
             height: auto;
         }
 
+        /* استایل اطلاعات تماس */
         header .contact-info p {
             margin: 5px 0;
         }
@@ -40,6 +46,7 @@
             text-decoration: none;
         }
 
+        /* بخش پروفایل */
         .profile {
             display: flex;
             justify-content: center;
@@ -66,6 +73,7 @@
             color: #666;
         }
 
+        /* بخش خدمات */
         .services {
             text-align: center;
             margin: 40px 0;
@@ -79,11 +87,17 @@
 
         .services ul {
             list-style-type: none;
+            padding-left: 0;
         }
 
         .services ul li {
             font-size: 18px;
             color: #555;
+        }
+
+        /* استایل لینک اینستاگرام */
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
