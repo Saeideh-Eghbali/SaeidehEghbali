@@ -18,8 +18,8 @@
 
         /* هدر */
         header {
-            background-color: #2a3d66;
-            padding: 10px 20px;
+            background-color: #3A4A75; /* رنگ آبی ملایم‌تر */
+            padding: 15px 30px;
             color: white;
             display: flex;
             justify-content: space-between;
@@ -29,7 +29,7 @@
         .logo img {
             width: 80px;
             height: 80px;
-            border-radius: 50%; /* دایره‌ای کردن آرم */
+            border-radius: 50%;
         }
 
         .profile-header {
@@ -39,17 +39,17 @@
 
         .profile-header .profile-name {
             font-family: 'Amiri', cursive;
-            font-size: 36px; /* بزرگتر کردن نام */
+            font-size: 40px; /* بزرگتر کردن نام */
             font-weight: bold;
         }
 
         .profile-header .bio {
-            font-size: 18px; /* تغییر اندازه فونت */
+            font-size: 20px; /* تغییر اندازه فونت */
         }
 
         .profile-image {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             overflow: hidden;
             margin-left: 20px;
@@ -63,26 +63,26 @@
 
         /* بدنه */
         .body {
-            background-color: #f4f8fb;
+            background-color: #F0F4F8; /* رنگ زمینه روشن و ملایم */
             padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh; /* این ویژگی باعث می‌شود که صفحه حداقل ارتفاع 100vh داشته باشد */
+            min-height: 100vh;
         }
 
         /* بخش توضیحات */
         .description {
-            background-color: #3e4a59; /* رنگ تیره‌تر */
+            background-color: #4C5C73; /* رنگ تیره‌تر */
             color: white;
             padding: 20px;
-            margin-top: 0; /* فاصله صفر کردن */
+            margin-top: 0;
             display: flex;
             justify-content: space-between;
             text-align: center;
             width: 100%;
-            margin-bottom: -40px; /* بالا بردن بیشتر */
-            margin-top: -30px; /* بالاتر بردن کادر توضیحات */
+            margin-bottom: -35px;
+            margin-top: -38px;
         }
 
         .description div {
@@ -90,7 +90,7 @@
         }
 
         .description h3 {
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 10px;
         }
 
@@ -100,25 +100,23 @@
 
         /* کادر وکالت */
         .legal-services {
-            background-color: #f4f8fb; /* رنگ پس‌زمینه بادی */
-            color: black; /* رنگ مشکی برای متن */
+            background-color: #F0F4F8; /* رنگ ملایم‌تر */
+            color: black;
             padding: 30px;
             margin-top: 30px;
-            width: 95%; /* عریض‌تر کردن کادر */
-            max-width: 1500px; /* افزایش حداکثر عرض */
+            width: 95%;
+            max-width: 1500px;
             margin-left: auto;
             margin-right: auto;
-            border-radius: 12px; /* گوشه‌های گرد */
+            border-radius: 12px;
             text-align: center;
-            font-family: 'Vazir', sans-serif; /* تغییر فونت به 'Vazir' */
+            font-family: 'Vazir', sans-serif;
             position: relative;
-            top: 40px; /* قرار گرفتن در وسط صفحه */
-            box-shadow: none; /* حذف سایه */
-            font-weight: normal; /* خاموش کردن بولد */
-        }
+            top: 10px;
+                   }
 
         .legal-services h3 {
-            font-size: 28px; /* بزرگتر کردن اندازه فونت */
+            font-size: 28px;
             margin-bottom: 10px;
         }
 
@@ -127,31 +125,49 @@
             margin-bottom: 10px;
         }
 
-        .legal-services .description-text {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 5px 0;
+        /* کادر جداگانه برای عکس‌ها */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            width: 95%;
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background-color: #F0F4F8;
+            border-radius: 12px;
+        }
+
+        .image-section {
+            width: 32%; /* هر بخش به اندازه 32% عرض کادر */
+            text-align: center;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* کادر تماس با من */
         .contact {
-            background-color: #3e4a59; /* رنگ سنگین و کلاسیک */
+            background-color: #4C5C73; /* رنگ تیره و کلاسیک */
             color: #fff;
             padding: 20px;
-            margin-top: 20px;
-            width: 40%; /* کاهش عرض کادر */
+            margin-top: 350px;
+            width: 40%;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            position: relative;
-            top: 100px; /* انتقال پایین‌تر از کادر وکالت */
         }
 
         .contact h3 {
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 20px;
         }
 
@@ -198,7 +214,7 @@
         }
 
         .about-me h2 {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 15px;
         }
 
@@ -210,9 +226,9 @@
         footer {
             background-color: #1a1a1a;
             color: white;
-            padding: 20px;
+            padding: 1px;
             text-align: center;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -269,22 +285,38 @@
 
         <!-- کادر وکالت -->
         <div class="legal-services">
-            <h3>قبول وکالت در دعاوی ملکی، ثبتی و شهرداری به نحو تخصصی همچنین دعاوی حقوقی و کیفری و خانواده</h3>
+            <h3>قبول وکالت در دعاوی ملکی، ثبتی و شهرداری به نحو تخصصی همچنین دعاوی حقوقی، کیفری و خانواده</h3>
+        </div>
+
+        <!-- کادر جداگانه برای عکس‌ها -->
+        <div class="image-gallery">
+            <div class="image-section">
+                <img src="your-image-path1.jpg" alt="Image 1" class="gallery-image">
+            </div>
+            <div class="image-section">
+                <img src="your-image-path2.jpg" alt="Image 2" class="gallery-image">
+            </div>
+            <div class="image-section">
+                <img src="your-image-path3.jpg" alt="Image 3" class="gallery-image">
+            </div>
         </div>
 
         <!-- کادر تماس با من -->
         <div class="contact">
-            <h3>راه های ارتباطی</h3>
-            <p><i class="fas fa-phone"></i> شماره دفتر - 03132613594</p>
-            <p><i class="fab fa-whatsapp"></i>  - تماس واتساپ</p>
-            <p><i class="fab fa-instagram"></i> @yourinstagramid</p>
-            <p>آدرس دفتر : انتهای خ علامه امینی شرقی .میدان پردیس .مجتمع انوشه</p>
+            <h3>تماس با من</h3>
+            <p>برای مشاوره و دریافت خدمات حقوقی با من تماس بگیرید</p>
+            <p>شماره تلفن: 1234567890</p>
+            <p>ایمیل: saieda@example.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
     </div>
 
     <!-- فوتر -->
     <footer>
-        <p>تمامی حقوق محفوظ است &copy; 2025</p>
+        <p>تمامی حقوق محفوظ است</p>
     </footer>
 
 </body>
