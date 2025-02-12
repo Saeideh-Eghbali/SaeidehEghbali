@@ -19,18 +19,46 @@
         /* هدر */
         header {
             background-color: #2a3d66;
-            padding: 20px;
+            padding: 10px 20px;
             color: white;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
-                       margin-bottom: 0;
         }
 
         .logo img {
             width: 80px;
-            height: auto;
-            margin-right: 20px;
+            height: 80px;
+            border-radius: 50%; /* دایره‌ای کردن آرم */
+        }
+
+        .profile-header {
+            text-align: center;
+            color: white;
+        }
+
+        .profile-header .profile-name {
+            font-family: 'Amiri', cursive;
+            font-size: 36px; /* بزرگتر کردن نام */
+            font-weight: bold;
+        }
+
+        .profile-header .bio {
+            font-size: 18px; /* تغییر اندازه فونت */
+        }
+
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* بدنه */
@@ -40,49 +68,21 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh; /* این ویژگی باعث می‌شود که صفحه حداقل ارتفاع 100vh داشته باشد */
         }
 
-        /* بخش پروفایل */
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-            margin-top: 50px; /* اضافه کردن فاصله بیشتر برای پایین‌تر آوردن پروفایل */
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 30px;
-            border-radius: 50%;
-            background-color: #ccc;
-            margin: 0 auto;
-        }
-
-        .profile-name {
-            font-family: 'Amiri', cursive;
-            font-size: 36px;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .bio {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        /* بخش توضیحات (سوابق، پرونده‌ها، تخصص‌ها) */
+        /* بخش توضیحات */
         .description {
-            background-color: #607d8b;
+            background-color: #3e4a59; /* رنگ تیره‌تر */
             color: white;
-            padding: 20;
-            margin-top: 0; /* تغییر فاصله به صفر */
+            padding: 20px;
+            margin-top: 0; /* فاصله صفر کردن */
             display: flex;
             justify-content: space-between;
             text-align: center;
             width: 100%;
-            max-width: 100%;
+            margin-bottom: -40px; /* بالا بردن بیشتر */
+            margin-top: -30px; /* بالاتر بردن کادر توضیحات */
         }
 
         .description div {
@@ -94,61 +94,78 @@
             margin-bottom: 10px;
         }
 
-        /* کادر خدمات ما (شامل خدمات و تماس با من) */
-        .services {
-            margin-top: 40px;
-            padding: 20px;
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            justify-content: space-between;
+        .description p {
+            font-size: 16px;
         }
 
-        .services .left, .services .right {
-            width: 48%;
-            background-color: #3e4a59; /* رنگ تیره‌تر */
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .services h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .services ul {
-            list-style-type: none;
-            padding-left: 0;
+        /* کادر وکالت */
+        .legal-services {
+            background-color: #f4f8fb; /* رنگ پس‌زمینه بادی */
+            color: black; /* رنگ مشکی برای متن */
+            padding: 30px;
+            margin-top: 30px;
+            width: 95%; /* عریض‌تر کردن کادر */
+            max-width: 1500px; /* افزایش حداکثر عرض */
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 12px; /* گوشه‌های گرد */
             text-align: center;
+            font-family: 'Vazir', sans-serif; /* تغییر فونت به 'Vazir' */
+            position: relative;
+            top: 40px; /* قرار گرفتن در وسط صفحه */
+            box-shadow: none; /* حذف سایه */
+            font-weight: normal; /* خاموش کردن بولد */
         }
 
-        .services ul li {
+        .legal-services h3 {
+            font-size: 28px; /* بزرگتر کردن اندازه فونت */
+            margin-bottom: 10px;
+        }
+
+        .legal-services p {
             font-size: 18px;
             margin-bottom: 10px;
         }
 
-        /* بخش تماس با من داخل خدمات */
-        .services .right h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
+        .legal-services .description-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 5px 0;
         }
 
-        .services .right p {
+        /* کادر تماس با من */
+        .contact {
+            background-color: #3e4a59; /* رنگ سنگین و کلاسیک */
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            width: 40%; /* کاهش عرض کادر */
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            top: 100px; /* انتقال پایین‌تر از کادر وکالت */
+        }
+
+        .contact h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
             font-size: 16px;
             margin: 5px 0;
         }
 
-        .services .right a {
+        .contact a {
             color: #fff;
             text-decoration: none;
         }
 
-        .services .right a:hover {
+        .contact a:hover {
             text-decoration: underline;
         }
 
@@ -168,12 +185,11 @@
             color: #ffd700;
         }
 
-        /* بخش درباره من */
         .about-me {
             width: 100%;
             max-width: 1200px;
-            margin-top: 50px;
-            margin-bottom: 50px; /* فاصله بیشتر از بالا */
+            margin-top: 30px;
+            margin-bottom: 50px;
             text-align: center;
             background-color: #ffffff;
             padding: 30px;
@@ -191,46 +207,14 @@
             color: #555;
         }
 
-        /* بخش پاسخ به سوالات */
-        .questions {
-            background-color: #3b5998;
-            padding: 20px;
-            margin-top: 40px;
-            width: 80%;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .questions h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: white;
-        }
-
-        .questions form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .questions input, .questions textarea {
-            width: 100%;
-            max-width: 500px;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        /* فوتر */
         footer {
             background-color: #1a1a1a;
             color: white;
             padding: 20px;
             text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
         footer a {
@@ -243,7 +227,6 @@
             text-decoration: underline;
         }
     </style>
-    <!-- بارگذاری فونت Awesome برای ایکون‌ها -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -253,11 +236,22 @@
         <div class="logo">
             <img src="https://raw.githubusercontent.com/Saeideh-Eghbali/SaeidehEghbali/main/qovveh-cazaye-logo.png" alt="آرم قوه قضائیه">
         </div>
+        <div class="profile-header">
+            <div class="profile-name">
+                سرکار خانم وکیل سعیده اقبالی
+            </div>
+            <div class="bio">
+                وکیل پایه یک دادگستری و مشاور حقوقی
+            </div>
+        </div>
+        <div class="profile-image">
+            <img src="https://raw.githubusercontent.com/Saeideh-Eghbali/SaeidehEghbali/main/qwe.png" alt="پروفایل">
+        </div>
     </header>
 
     <!-- بدنه -->
     <div class="body">
-        <!-- بخش توضیحات (سوابق، پرونده‌ها، تخصص‌ها) -->
+        <!-- بخش توضیحات -->
         <div class="description">
             <div>
                 <h3>سوابق</h3>
@@ -269,61 +263,23 @@
             </div>
             <div>
                 <h3>تخصص‌ها</h3>
-                <p>تخصص در دعاوی ملکیی، خانواده و حقوقی</p>
+                <p>تخصص در دعاوی ملکی، خانواده و حقوقی</p>
             </div>
         </div>
 
-        <!-- بخش پروفایل -->
-        <div class="profile">
-            <div class="profile-image">
-                <img src="https://github.com/Saeideh-Eghbali/SaeidehEghbali/blob/main/qwe.png" alt="پروفایل">
-            </div>
-            <div class="profile-name">
-                سرکار خانم وکیل سعیده اقبالی
-            </div>
-            <div class="bio">
-                وکیل پایه یک دادگستری و مشاور حقوقی
-            </div>
-        </div>
-
-        <!-- بخش درباره من -->
-        <div class="about-me">
-            <h2>درباره من</h2>
-            <p>قبول وکالت در دعاوی ملکی .ثبتی و شهرداری به نحو تخصصی هم چنین دعاوی حقوقی و کیفری و خانواده</p>
+        <!-- کادر وکالت -->
+        <div class="legal-services">
+            <h3>قبول وکالت در دعاوی ملکی، ثبتی و شهرداری به نحو تخصصی همچنین دعاوی حقوقی و کیفری و خانواده</h3>
         </div>
 
         <!-- کادر تماس با من -->
-        <div class="services">
-            <div class="right">
-                <h3>راه های ارتباطی</h3>
-                <p><i class="fas fa-phone"></i> شماره دفتر - 03132613594</p>
-                <p><i class="fab fa-whatsapp"></i>  - تماس واتساپ</p>
-                <p><i class="fab fa-instagram"></i> @yourinstagramid</p>
-                <p>آدرس دفتر .انتهای خ علامه امینی شرقی .میدان پردیس .مجتمع انوشه</p>
-            </div>
-
-            <!-- کادر خدمات  -->
-            <div class="left">
-                <h3>خدمات</h3>
-                <ul>
-                    <li>وکالت حقوقی</li>
-                    <li>دعاوی خانواده</li>
-                    <li>مشاور خقوقی</li>
-                </ul>
-            </div>
+        <div class="contact">
+            <h3>راه های ارتباطی</h3>
+            <p><i class="fas fa-phone"></i> شماره دفتر - 03132613594</p>
+            <p><i class="fab fa-whatsapp"></i>  - تماس واتساپ</p>
+            <p><i class="fab fa-instagram"></i> @yourinstagramid</p>
+            <p>آدرس دفتر : انتهای خ علامه امینی شرقی .میدان پردیس .مجتمع انوشه</p>
         </div>
-
-        <!-- بخش پاسخ به سوالات -->
-        <div class="questions">
-            <h3>پاسخ به سوالات</h3>
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="نام خود را وارد کنید" required>
-                <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
-                <textarea name="message" placeholder="سوالات خود را بنویسید" rows="5" required></textarea>
-                <button type="submit">ارسال سوال</button>
-            </form>
-        </div>
-
     </div>
 
     <!-- فوتر -->
