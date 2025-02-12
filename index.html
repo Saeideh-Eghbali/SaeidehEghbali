@@ -321,5 +321,14 @@
         <p>تمامی حقوق محفوظ است</p>
     </footer>
 
+    <!-- جاوااسکریپت برای غیرفعال کردن کلیک راست روی تصاویر -->
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+            }
+        });
+    </script>
+
 </body>
 </html>
